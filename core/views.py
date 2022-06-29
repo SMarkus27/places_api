@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from .serializers import PlacesSerializer
+from .models import Places
 
-# Create your views here.
+
+class PlacesViewSet(viewsets.ModelViewSet):
+    queryset = Places.objects.all()
+    serializer_class = PlacesSerializer

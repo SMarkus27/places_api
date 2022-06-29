@@ -1,5 +1,4 @@
 from django.db import models
-from django.forms import DateTimeField
 
 class Places(models.Model):
     name = models.CharField(max_length=50)
