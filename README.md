@@ -26,6 +26,10 @@ A place must have the following fields:
 ```
 pip install requirements.txt
 
+python manage.py makemigrations
+
+python manage.py migrate
+
 python manage.py runserver
 
 ```
